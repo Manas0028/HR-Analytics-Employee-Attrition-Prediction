@@ -1,4 +1,4 @@
-# 📊 HR Analytics – Employee Attrition Prediction using Machine Learning
+# 📊 HR Analytics – Employee Attrition Prediction
 
 <p align="center">
 
@@ -12,57 +12,51 @@
 
 ---
 
-## 📌 Project Overview
+# 📌 Project Overview
 
-Employee attrition is a critical challenge for organizations, leading to increased recruitment costs, reduced productivity, and loss of experienced talent.
+Employee attrition is one of the biggest challenges faced by organizations. This project analyzes the IBM HR Analytics dataset to understand employee behavior and predict attrition using Machine Learning.
 
-This project analyzes the **IBM HR Analytics Employee Attrition Dataset** using **Python, Exploratory Data Analysis (EDA), and Machine Learning** to identify the key factors influencing employee attrition and build predictive models for employee retention.
+The project includes:
+
+- Exploratory Data Analysis (EDA)
+- Data Preprocessing
+- Feature Engineering
+- Logistic Regression
+- Random Forest Classification
+- Feature Importance Analysis
+- Model Saving using Joblib
 
 ---
 
 # 🎯 Objectives
 
-- Analyze employee attrition patterns.
-- Perform data cleaning and preprocessing.
-- Conduct Exploratory Data Analysis (EDA).
-- Build predictive machine learning models.
-- Compare Logistic Regression and Random Forest.
-- Identify key business insights for HR decision-making.
+- Analyze employee attrition trends
+- Visualize HR data
+- Build predictive models
+- Compare machine learning algorithms
+- Identify important factors affecting employee attrition
 
 ---
 
 # 📂 Project Structure
 
-```
+```text
 HR-Analytics-Employee-Attrition-Prediction
 │
 ├── Data/
 │   └── WA_Fn-UseC_-HR-Employee-Attrition.csv
 │
 ├── Images/
-│   ├── department_distribution.png
-│   ├── gender_distribution.png
-│   ├── overtime_attrition.png
 │   ├── age_distribution.png
-│   ├── monthly_income_distribution.png
-│   ├── income_vs_attrition.png
 │   ├── correlation_heatmap.png
-│   └── feature_importance.png
+│   ├── department_distribution.png
+│   ├── feature_importance.png
+│   ├── gender_distribution.png
+│   ├── income_vs_attrition.png
+│   ├── monthly_income_distribution.png
+│   └── overtime_attrition.png
 │
 ├── scripts/
-│   ├── hr_analytics.py
-│   ├── 08_overtime_attrition.py
-│   ├── 09_age_distribution.py
-│   ├── 10_monthly_income_distribution.py
-│   ├── 11_income_vs_attrition.py
-│   ├── 12_correlation_heatmap.py
-│   ├── 13_data_preprocessing.py
-│   ├── 14_train_test_split.py
-│   ├── 15_logistic_regression.py
-│   ├── 16_random_forest.py
-│   ├── 17_feature_importance.py
-│   └── 18_save_model.py
-│
 ├── hr_attrition_model.pkl
 ├── requirements.txt
 ├── README.md
@@ -71,14 +65,12 @@ HR-Analytics-Employee-Attrition-Prediction
 
 ---
 
-# 📊 Dataset Information
+# 📊 Dataset
 
-| Attribute | Details |
-|------------|---------|
-| Dataset | IBM HR Analytics Employee Attrition |
-| Records | 1470 Employees |
-| Features | 35 |
-| Target Variable | Attrition |
+- **Dataset:** IBM HR Analytics Employee Attrition
+- **Rows:** 1470
+- **Columns:** 35
+- **Target Variable:** Attrition
 
 ---
 
@@ -91,49 +83,50 @@ HR-Analytics-Employee-Attrition-Prediction
 - Seaborn
 - Scikit-learn
 - VS Code
-- Git & GitHub
+- Git
+- GitHub
 
 ---
 
 # 📈 Exploratory Data Analysis
 
-## 📌 Department-wise Employee Distribution
+## Department-wise Employee Distribution
 
 ![Department Distribution](Images/department_distribution.png)
 
 ---
 
-## 📌 Gender Distribution
+## Gender Distribution
 
 ![Gender Distribution](Images/gender_distribution.png)
 
 ---
 
-## 📌 Overtime vs Employee Attrition
+## Overtime vs Attrition
 
 ![Overtime Attrition](Images/overtime_attrition.png)
 
 ---
 
-## 📌 Age Distribution
+## Age Distribution
 
 ![Age Distribution](Images/age_distribution.png)
 
 ---
 
-## 📌 Monthly Income Distribution
+## Monthly Income Distribution
 
 ![Monthly Income Distribution](Images/monthly_income_distribution.png)
 
 ---
 
-## 📌 Income vs Attrition
+## Income vs Attrition
 
 ![Income vs Attrition](Images/income_vs_attrition.png)
 
 ---
 
-## 📌 Correlation Heatmap
+## Correlation Heatmap
 
 ![Correlation Heatmap](Images/correlation_heatmap.png)
 
@@ -146,7 +139,7 @@ HR-Analytics-Employee-Attrition-Prediction
 | Logistic Regression | **86.05%** |
 | Random Forest | **86.73%** |
 
-🏆 **Best Performing Model:** Random Forest
+🏆 **Best Model:** Random Forest
 
 ---
 
@@ -154,65 +147,49 @@ HR-Analytics-Employee-Attrition-Prediction
 
 ![Feature Importance](Images/feature_importance.png)
 
-The Random Forest model identified the following important factors influencing employee attrition:
+Important features identified by the model:
 
 - Monthly Income
 - Overtime
 - Age
 - Total Working Years
 - Job Level
-- Environment Satisfaction
 - Job Satisfaction
+- Environment Satisfaction
 
 ---
 
 # 💡 Business Insights
 
-- Employees working overtime are more likely to leave the organization.
-- Lower monthly income is associated with higher attrition.
-- Younger employees show comparatively higher attrition rates.
-- Job satisfaction and work-life balance significantly influence employee retention.
-- HR departments can use predictive analytics to identify at-risk employees and improve retention strategies.
+- Employees working overtime have a higher probability of leaving.
+- Employees with lower monthly income show higher attrition.
+- Younger employees tend to leave more frequently.
+- Job satisfaction and work-life balance significantly affect retention.
+- HR departments can use predictive analytics to reduce employee turnover.
 
 ---
 
-# 📊 Model Performance
+# 🚀 How to Run
 
-### Logistic Regression
-
-- Accuracy: **86.05%**
-- Simple and interpretable model.
-- Performs well on balanced relationships.
-
-### Random Forest
-
-- Accuracy: **86.73%**
-- Handles complex relationships effectively.
-- Provides feature importance for better interpretability.
-
----
-
-# 🚀 How to Run the Project
-
-## Clone the Repository
+Clone the repository
 
 ```bash
 git clone https://github.com/Manas0028/HR-Analytics-Employee-Attrition-Prediction.git
 ```
 
-## Install Dependencies
+Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## Run the Project
+Run the project
 
 ```bash
 python scripts/hr_analytics.py
 ```
 
-## Run Individual Scripts
+Run Machine Learning Models
 
 ```bash
 python scripts/15_logistic_regression.py
@@ -225,48 +202,42 @@ python scripts/18_save_model.py
 
 # 📌 Project Highlights
 
-✅ Data Cleaning & Preprocessing
-
-✅ Exploratory Data Analysis (EDA)
-
-✅ Feature Engineering
-
-✅ Logistic Regression
-
-✅ Random Forest Classifier
-
-✅ Feature Importance Analysis
-
-✅ Model Evaluation
-
-✅ Saved Machine Learning Model
+- ✔ Data Cleaning
+- ✔ Data Visualization
+- ✔ Machine Learning
+- ✔ Feature Engineering
+- ✔ Logistic Regression
+- ✔ Random Forest
+- ✔ Model Evaluation
+- ✔ Feature Importance
+- ✔ Saved ML Model
 
 ---
 
-# 🔮 Future Improvements
+# 🔮 Future Enhancements
 
 - Hyperparameter Tuning
-- XGBoost & LightGBM Models
-- Streamlit Web Application
-- Flask API Deployment
-- Power BI Dashboard Integration
-- Real-time Employee Attrition Prediction
+- XGBoost Model
+- Streamlit Dashboard
+- Flask API
+- Power BI Dashboard
+- Real-time Prediction System
 
 ---
 
 # 👨‍💻 Author
 
-**Manas Aswal**
+## Manas Aswal
 
-🎓 B.Tech – Information Technology
+**B.Tech – Information Technology**
 
-💼 Aspiring Data Analyst
+**Aspiring Data Analyst**
 
-### 🔗 Connect with Me
+### Connect with Me
 
-- **GitHub:** https://github.com/Manas0028
-- **LinkedIn:** *(https://www.linkedin.com/in/manas-aswal-704876288))*
+- GitHub: https://github.com/Manas0028
+- LinkedIn: *(https://www.linkedin.com/in/manas-aswal-704876288)*
 
 ---
 
-## ⭐ If you found this project useful, don't forget to **Star ⭐ this repository!**
+## ⭐ If you like this project, don't forget to Star this repository!
